@@ -1,0 +1,101 @@
+function myFucntion1()                                    
+{ 
+    var fname = document.forms["RegForm"]["FName"];       
+	var lname = document.forms["RegForm"]["LName"];  
+	var gender = document.forms["RegForm"]["Gender"];  
+	var month = document.forms["RegForm"]["Month"];  
+	var date = document.forms["RegForm"]["Date"];  
+	var year = document.forms["RegForm"]["Year"];  
+	var location = document.forms["RegForm"]["Location"];  
+	var username = document.forms["RegForm"]["CUsername"];   
+	var password = document.forms["RegForm"]["Password"];  	
+   var cpassword = document.forms["RegForm"]["CPassword"];
+   var email = document.forms["RegForm"]["EMail"];  
+   var number = document.forms["RegForm"]["Number"];
+
+
+    if (fname.value == "")                                  
+    { 
+        window.alert("First Name"); 
+        fname.focus(); 
+        return false; 
+    } 
+	if (lname.value == "")                                  
+    { 
+        window.alert("Last Name"); 
+        lname.focus(); 
+        return false; 
+    } 
+	if (gender.selectedIndex < 1)                  
+    { 
+        alert("Gender"); 
+        gender.focus(); 
+        return false; 
+    } 
+	if (month.selectedIndex < 1)                  
+    { 
+        alert("Month"); 
+        month.focus(); 
+        return false; 
+    } 
+   if (date.selectedIndex < 1)                                  
+    { 
+        alert("Date"); 
+        date.focus(); 
+        return false; 
+    } 
+	if (year.selectedIndex < 1)                                  
+    { 
+        alert("Year"); 
+        year.focus(); 
+        return false; 
+    } 
+	if (location.selectedIndex < 1)                  
+    { 
+        alert("Location"); 
+        location.focus(); 
+        return false; 
+    } 
+	if (username.value == "")                                  
+    { 
+        window.alert("Username:"); 
+        cemail.focus(); 
+        return false; 
+    } 
+    if (password.value == "")                        
+    { 
+        window.alert("Please enter your password"); 
+        password.focus(); 
+        return false; 
+    } 
+	  if (password.value == "")                        
+    { 
+        window.alert("Confirm password"); 
+        cpassword.focus(); 
+        return false; 
+    } 
+	 if (email.value.indexOf("@", 0) < 0)                 
+    { 
+        window.alert("Please enter a valid e-mail address."); 
+        email.focus(); 
+        return false; 
+    } 
+    if (email.value.indexOf(".", 0) < 0)                 
+    { 
+        window.alert("Please enter a valid e-mail address."); 
+        email.focus(); 
+        return false; 
+	}
+	if (number.value == "")                                  
+    { 
+        window.alert("Mobile Number:"); 
+        number.focus(); 
+        return false; 
+    } 
+    return true; 
+}
+
+
+
+
+
