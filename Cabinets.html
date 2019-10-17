@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Muebles de Manila | Cabinets</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+ 
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+html {
+  font-family: "Lucida Sans", sans-serif;
+}
+
+body {
+  margin: 0;
+background-image: url("Graybg.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 250%, 250%;
+	font-family: Arial, Helvetica, sans-serif;
+	}
+
+
+/* Style the header */
+.header {
+  background-color: #f1f1f1;
+  padding: 20px;
+  display:block;
+  width: 175%;
+}
+
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  width: 175%;
+}
+
+/* Style the topnav links */
+.topnav a{
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown:hover .dropbtn {
+  background-color:#ddd;
+  color: black;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.middle{
+background-color: #fafcfc;
+  padding: 15px;
+  color: #ffffff;
+  text-align: left;
+  font-size: 14px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  font-family: "Lucida Sans", sans-serif;
+  
+}
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  padding: 8px;
+  margin-bottom: 7px;
+  background-color: #33b5e5;
+  color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.menu li:hover {
+  background-color: #0099cc;
+}
+
+.aside {
+  background-color: #33b5e5;
+  padding: 15px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 14px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.footer {
+  background-color: #0099cc;
+  color: #ffffff;
+  text-align: center;
+  font-size: 12px;
+  padding: 15px;
+  width:175%;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+
+.nav-link, .navbar-brand {   
+	color: #50fcf5;   
+	cursor: pointer;
+} 
+
+.navbar-collapse {   
+	justify-content: flex-end; 
+}
+
+.mySlides {display:none;
+margin-left: auto;
+margin-right: auto;
+}
+
+table {
+  table-layout: fixed ;
+  width: 700% ;
+   text-align: center; 
+    vertical-align: middle;
+}
+td, tr, th {
+  width: 300% ;
+  padding: 15px;
+   text-align: center; 
+    vertical-align: middle;
+ 
+}
+
+</style>
+</head>
+<body>
+
+<div class="header">
+
+  <a href ="HOF.html" ><img src="c8c33c49-df64-4002-8507-3e1fcca69dda_200x200.png" style="vertical-align: middle;"  width="200" height="175"></a>
+<span style="vertical-align: middle; font-weight:bold; font-size:32px;">Muebles de Manila</span> 
+</div>
+
+
+
+	<div class="topnav">
+	<div class="dropdown">
+<button class="dropbtn">Products</button>
+    <div class="dropdown-content">
+      <a href="Cabinets.html">Cabinets</a>
+      <a href="Chairs.html">Chairs</a>
+      <a href="Tables.html">Tables</a>
+    </div>
+	</div>
+  <a href="About Us.html">About Us</a>
+  <a href="Warranty.html">Warranty</a>
+  <a href="FAQs.html">FAQs</a>
+  <a href="Return_Exchange.html">Return & Exchange</a>
+  
+</div>
+
+<div class="row">
+  <div class="col-3 col-s-3 menu">
+    <table>
+<tr>
+ <td><a href ="Cabinet_1.html"> <img src="Cabinet_1.jpg" style="width:50%"></a></td> 
+ <td><a href ="Cabinet_2.html"> <img src="Cabinet_2.jpg" style="width:50%"></a></td>
+ <td><a href ="Cabinet_3.html"> <img src="Cabinet_3.png" style="width:50%"></a></td>
+ <td><a href ="Cabinet_4.html"> <img src="Cabinet_4.jpg" style="width:50%"></a></td>
+ <td><a href ="Cabinet_5.html"> <img src="Cabinet_5.jpg" style="width:50%"></a></td>
+
+</tr>
+<tr><td>Shoe Cabinet Wedges</td>
+<td>Chest of 4 Drawers Cabinet</td>
+<td>Teak Cabinet</td>
+<td>Traditional Medium Brown Curio Cabinet</td>
+<td>Patinal Wardrobe Cabinet</td>
+
+<tr>
+  <td><a href ="Cabinet_1.html">₱ 7,999.00</a></td>
+  <td><a href ="Cabinet_2.html">₱ 10,999.00</a></td>
+  <td><a href ="Cabinet_3.html">₱ 8,999.00</a></td>
+  <td><a href ="Cabinet_4.html">₱ 15,999.00</a></td>
+  <td><a href ="Cabinet_5.html">₱ 17,999.00</a></td>
+  
+</tr>
+<tr>
+ <td> <a href ="Cabinet_6.html"> <img src="Cabinet_6.jpg" style="width:50%"></a></td>
+ <td> <a href ="Cabinet_7.html"> <img src="Cabinet_7.jpg" style="width:50%"></a></td>
+ <td> <a href ="Cabinet_8.html"> <img src="Cabinet_8.jpg" style="width:50%"></a></td>
+ <td> <a href ="Cabinet_9.html"> <img src="Cabinet_9.jpg" style="width:50%"></a></td>
+ <td> <a href ="Cabinet_10.html"> <img src="Cabinet_10.jpeg" style="width:50%"></a></td>
+</tr>
+<tr>
+<td>Armoire Wood 4-drawer Wardrobe Closet</td>
+<td>Mid-Century Bar Cabinet</td>
+<td>Sweet Modern China Cabinet</td>
+<td>Copper Grove Puff Island Kitchen Cabinet</td>
+<td>Cabinets</td></tr>
+</tr>
+
+<tr>
+<td> <a href ="Cabinet_6.html">₱ 17,999.00</a></td>
+ <td> <a href ="Cabinet_7.html">₱ 10,999.00</a></td>
+ <td> <a href ="Cabinet_8.html">₱ 6,999.00</a></td>
+ <td> <a href ="Cabinet_9.html">₱ 7,999.00</a></td>
+ <td> <a href ="Cabinet_10.html">₱ 6,999.00</a></td>
+</tr>
+
+
+
+
+</table>
+  </div>
+  
+  
+
+
+  
+  
+
+  <div class="col-6 col-s-9">
+ 
+  </div>
+
+  <div class="col-3 col-s-12">
+    <!--<div class="aside">
+      <h2>What?</h2>
+      <p>Muebles de Manila is an online selling website of furnitures.</p>
+      <h2>Where?</h2>
+      <p>Muebles de Manila resides at Brgy. Manggahan Aurora, Project 3 Cubao, Quezon City</p>
+      <h2>How?</h2>
+      <p>You can reach us through our customer service team</p>
+    </div>-->
+  </div>
+</div>
+
+<div class="footer">
+  <p><p>Contact us at +639 286 359 925 and our customer service team is available on weekdays from 8:00 AM to 5:00 PM!</p>
+  <p>or</p>
+  <p>You can fill out the form, email us at @MueblesdeManila.ph , or visit us on Facebook or Instagram:@MueblesdeManila.</p>
+</div>
+
+<span style="float:right;width:40px;"></span>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+
+</body>
+</html>
